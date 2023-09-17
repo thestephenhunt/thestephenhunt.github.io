@@ -104,7 +104,7 @@ html {
       top: 10px;
       left: 10px;
       position: absolute;
-      opacity: 0.7;
+      opacity: 0.9;
       filter: blur(3rem);
     }
     
@@ -137,6 +137,7 @@ html {
       animation-duration: 33s;
       animation-direction: alternate-reverse;
       background-color: var(--misty-rose);
+      z-index: 3;
     }
     
     & .circle:nth-child(5) {
