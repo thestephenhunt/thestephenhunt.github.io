@@ -186,16 +186,54 @@ html {
     }
   }
 
-#hello {
-    color: #fff;
-    margin-top: 3rem;
+section {
 
     & h1 {
         font-size: 3rem;
+        color: var(--misty-rose)
     }
 
     & p {
         font-size: 1.25rem;
         font-weight: 300;
+        color: #fff;
+    }
+}
+
+#hello {
+    margin-top: 5rem;
+}
+
+#past-work {
+    margin-top: 5rem;
+
+    & h1 {
+        margin-bottom: 1rem;
+    }
+
+    & ul {
+        padding: 0;
+    }
+
+    & li {
+        margin-bottom: 1.5rem;
+        list-style: none;
+        background-image: url('assets/city.svg');
+        background-size: 2rem;
+        background-repeat: no-repeat;
+        background-position: left top;
+        padding: 0 3rem;
+
+        & h3 {
+            color: #fff;
+            margin-bottom: 0.5rem;
+            font-style: italic;
+            font-weight: 400;
+        }
+
+        & p {
+            padding-left: 1rem;
+            font-weight: 200;
+        }
     }
 }
