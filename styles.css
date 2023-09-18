@@ -39,6 +39,7 @@ p, h1, h2, h3, h4, h5, h6 {
 --chamoisee: #91785dff;
 --tiffany-blue: #86bbbdff;
 --bittersweet: #eb5e55ff;
+--tiffany-blue-transparent: rgba(134, 187, 189, 0.5);
 
 /* Font */
 font-family: 'Inter', sans-serif;
@@ -206,6 +207,7 @@ section {
 
 #past-work {
     margin-top: 5rem;
+    margin-bottom: 5rem;
 
     & h1 {
         margin-bottom: 1rem;
@@ -234,6 +236,26 @@ section {
         & p {
             padding-left: 1rem;
             font-weight: 200;
+        }
+    }
+}
+
+footer {
+    text-align: center;
+    color: white;
+    font-weight: 200;
+
+    & p {
+        border-top: 1px dotted var(--tiffany-blue-transparent);
+        padding: 3rem 0;
+    }
+
+    & a {
+        color: var(--misty-rose);
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
         }
     }
 }
