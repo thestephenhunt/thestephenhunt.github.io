@@ -34,12 +34,12 @@ p, h1, h2, h3, h4, h5, h6 {
 
 :root {
 /* Color palette */
---misty-rose: #f1dedeff;
---rich-black: #031927ff;
---chamoisee: #91785dff;
---tiffany-blue: #86bbbdff;
---bittersweet: #eb5e55ff;
---tiffany-blue-transparent: rgba(134, 187, 189, 0.5);
+--eggshell: #F4F1DE;
+--burnt-sienna: #E07A5F;
+--delft-blue: #3D405B;
+--cambridge-blue: #81B29A;
+--sunset: #F2CC8F;
+--cambridge-blue-transparent: rgba(129, 178, 154, 0.5);
 
 /* Font */
 font-family: 'Inter', sans-serif;
@@ -49,7 +49,7 @@ font-family: 'Inter', sans-serif;
 }
 
 html {
-    background-color: var(--rich-black);
+    background-color: var(--delft-blue);
     font-family: 'Inter';
 }
 
@@ -61,20 +61,19 @@ html {
 .animate {
     width: 100%;
     height: 300px;
-    background-color: black;
     position: relative;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 5px;
     counter-reset: count 1;
-    background-color: var(--rich-black);
+    background-color: var(--delft-blue);
     overflow: hidden;
 
     & h1, & h3 {
         position: absolute;
         width: 100%;
         z-index: 10;
-        color: #fff;
+        color: white;
         text-align: center;
     }
 
@@ -114,7 +113,7 @@ html {
       left: -20%;
       z-index: 2;
       animation-duration: 27s;
-      background-color: var(--misty-rose);
+      background-color: var(--eggshell);
     }
     
     & .circle:nth-child(2) {
@@ -122,14 +121,14 @@ html {
       left: 5%;
       animation-duration: 31s;
       animation-direction: alternate-reverse;
-      background-color: var(--bittersweet);
+      background-color: var(--burnt-sienna);
     }
     
     & .circle:nth-child(3) {
       top: -5%;
       left: 25%;
       animation-duration: 39s;
-      background-color: var(--tiffany-blue);
+      background-color: var(--cambridge-blue);
     }
     
     & .circle:nth-child(4) {
@@ -137,7 +136,7 @@ html {
       left: 50%;
       animation-duration: 33s;
       animation-direction: alternate-reverse;
-      background-color: var(--misty-rose);
+      background-color: var(--sunset);
       z-index: 3;
     }
     
@@ -145,7 +144,7 @@ html {
       top: -20%;
       left: 70%;
       animation-duration: 26s;
-      background-color: var(--bittersweet);
+      background-color: var(--eggshell);
     }
   }
   
@@ -191,13 +190,13 @@ section {
 
     & h1 {
         font-size: 3rem;
-        color: var(--misty-rose)
+        color: var(--cambridge-blue)
     }
 
     & p {
         font-size: 1.25rem;
         font-weight: 300;
-        color: #fff;
+        color: var(--eggshell);
     }
 }
 
@@ -227,10 +226,10 @@ section {
         padding: 0 3rem;
 
         & h3 {
-            color: #fff;
+            color: var(--sunset);
             margin-bottom: 0.5rem;
             font-style: italic;
-            font-weight: 400;
+            font-weight: 500;
         }
 
         & p {
@@ -246,12 +245,12 @@ footer {
     font-weight: 200;
 
     & p {
-        border-top: 1px dotted var(--tiffany-blue-transparent);
+        border-top: 1px dotted var(--cambridge-blue-transparent);
         padding: 3rem 0;
     }
 
     & a {
-        color: var(--misty-rose);
+        color: var(--burnt-sienna);
         text-decoration: none;
 
         &:hover {
