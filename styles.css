@@ -188,6 +188,21 @@ section {
 }
 
 #past-work {
+  & a {
+    float: right;
+    color: var(--white);
+    text-decoration: none;
+    border: 1px solid var(--white);
+    padding: 1rem 1.5rem;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    transition: all 0.2s;
+
+    &:hover {
+      color: #000;
+      background-color: var(--white);
+    }
+  }
   
   & ul {
     list-style-type: none;
