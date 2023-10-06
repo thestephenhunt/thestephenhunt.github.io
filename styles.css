@@ -46,8 +46,12 @@ nav {
   color: var(--white);
   position: sticky;
   top: 0;
-  margin: -20vh auto 0;
+  margin: -30vh auto 0;
   z-index: 10;
+
+  @media screen and (min-width: 800px) {
+    margin: -20vh auto 0;
+  }
 
   @media screen and (min-width: 1300px) {
     width: 80vw;
@@ -60,17 +64,30 @@ nav {
   & ul {
     display: grid;
     list-style-type: none;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     padding: 2em 0;
+
+    @media screen and (min-width: 800px) {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
 
     & li {
       font-size: 2rem;
       font-weight: 300;
       display: inline-flex;
       justify-content: center;
+      padding: 0.25em;
+
+      @media screen and (min-width: 800px) {
+        padding: 0;
+      }
 
       &:nth-child(n) {
-        border-right: 1px solid rgba(255,255,255,0.1);
+        border-right: none;
+
+        @media screen and (min-width: 800px) {
+          border-right: 1px solid rgba(255,255,255,0.1);
+        }
       }
 
       &:first-child {
@@ -98,11 +115,6 @@ nav {
   box-shadow: 0 0 20px 20px rgba(0,0,0,0.9);
 }
 
-section {
-  min-height: 100vh;
-  position: relative;
-}
-
 #home {
   text-align: center;
   padding-top: 0;
@@ -115,19 +127,33 @@ section {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    padding-top: 35vh;
+    padding-top: 20vh;
+
+    @media screen and (min-width: 800px) {
+      padding-top:  35vh;
+    }
   }
 
   & h3 {
     font-size: 2rem;
     font-weight: 300;
-    margin-bottom: 20vh;
-    color: var(--white)
+    margin-bottom: 0vh;
+    color: var(--white);
+
+    @media screen and (min-width: 800px) {
+      margin-bottom: 20vh;
+    }
   }
 }
 
 section {
-  padding-top: 10rem;
+  padding-top: 15rem;
+  min-height: 100vh;
+  position: relative;
+
+  @media screen and (min-width: 800px) {
+    padding-top: 10rem;
+  }
 
   & h1 {
     font-size: 4rem;
