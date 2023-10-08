@@ -30,6 +30,7 @@ html {
     background-attachment: fixed;
     font-family: var(--inter);
     scroll-behavior: smooth;
+    color: var(--white);
 }
 
 .container {
