@@ -238,15 +238,17 @@ if ($fav) {
 }
 
 let navbar = document.getElementById("nav");
+let drawContain = document.getElementById("drawer-container");
 let navPos = navbar.getBoundingClientRect().top;
 
 window.addEventListener("scroll", e => {
     let scrollPos = window.scrollY;
+    console.log("SCROLL: " + scrollPos + " NAV: " + navPos);
 
     if (scrollPos > navPos) {
-        navbar.classList.add('sticky');
+        drawContain.classList.add('sticky');
       }
       else {
-        navbar.classList.remove('sticky');
+        drawContain.classList.remove('sticky');
       }
   });
