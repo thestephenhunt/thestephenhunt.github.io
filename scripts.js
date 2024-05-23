@@ -237,18 +237,22 @@ if ($fav) {
   }
 }
 
-let navbar = document.getElementById("nav");
-let drawContain = document.getElementById("drawer-container");
-let navPos = navbar.getBoundingClientRect().top;
+let navBar = document.getElementById("nav");
+let navPos = navBar.getBoundingClientRect().top;
 
 window.addEventListener("scroll", e => {
     let scrollPos = window.scrollY;
-    console.log("SCROLL: " + scrollPos + " NAV: " + navPos);
 
     if (scrollPos > navPos) {
-        drawContain.classList.add('sticky');
+        navBar.classList.add('sticky');
       }
       else {
-        drawContain.classList.remove('sticky');
+        navBar.classList.remove('sticky');
       }
   });
+
+  function toggleNav() {
+    console.log("TOGGLED")
+    document.getElementsByClassName("drawer")[0].classList.toggle("opened")
+    document.getElementsByClassName("hamburger")[0].classList.toggle("hidden")
+  }
